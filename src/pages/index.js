@@ -1,5 +1,16 @@
-import React from "react"
+import * as React from "react"
+import Layout from '../components/layout'
 
-export default function Home() {
-  return <div>Hello world!</div>
+// markup
+const IndexPage = () => {
+  return (
+    <html>
+      <body>
+      <Layout pageTitle="Visvam Rajesh">
+      </Layout>
+      </body>
+    </html>
+  )
 }
+
+export default IndexPage

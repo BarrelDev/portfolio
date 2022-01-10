@@ -1,31 +1,30 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "visvam-s-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "description": "Visvam's Portfolio",
+  "author": "AbsorbedBarrel",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.0.1",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "gatsby": "^3.6.2",
+    "gatsby-plugin-image": "^1.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-transformer-sharp": "^3.7.1",
+    "jquery": "^3.6.0",
+    "postcss": "^8.3.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "prettier": "2.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
