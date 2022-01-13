@@ -1,30 +1,23 @@
 {
-  "name": "visvam-s-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Visvam's Portfolio",
-  "author": "AbsorbedBarrel",
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "portfolio",
+  "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
-  "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.2",
-    "gatsby": "^3.6.2",
-    "gatsby-plugin-image": "^1.7.1",
-    "gatsby-plugin-sharp": "^3.7.1",
-    "gatsby-source-filesystem": "^3.7.1",
-    "gatsby-transformer-sharp": "^3.7.1",
-    "jquery": "^3.6.0",
-    "postcss": "^8.3.5",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "svelte": "^3.44.0"
+  },
+  "type": "module"
 }
